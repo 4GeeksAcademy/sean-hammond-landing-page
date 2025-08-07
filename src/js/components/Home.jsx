@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import PageTitle from "./PageTitle";
 import Cards from "./Cards";
 
-const cardTitles = ["Card1", "Card2", "Card3", "Card4"];
+const cardTitles = ["Card1", "Card2", "Card3", "Card4"]; // might be unused
 const cardTitlesPro = [
   {
     title: cardTitles[0],
@@ -48,6 +48,7 @@ const Home = () => {
       <div className="d-flex flex-wrap">
         {cardTitlesPro.map((cards, i) => {
           return (
+            // Will display as many cards as are in the CardTitlesPro array
             <Cards
               key={i}
               title={cards.title}
