@@ -4,6 +4,7 @@ import PageTitle from "./PageTitle";
 import Cards from "./Cards";
 
 const cardTitles = ["Card1", "Card2", "Card3", "Card4"];
+// Contains variables used below for cards
 const cardTitlesPro = [
   {
     title: cardTitles[0],
