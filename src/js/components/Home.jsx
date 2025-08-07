@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import PageTitle from "./PageTitle";
 import Cards from "./Cards";
 
-const cardTitles = ["Card1", "Card2", "Card3", "Card4"]; // might be unused
+const cardTitles = ["Card1", "Card2", "Card3", "Card4"];
 const cardTitlesPro = [
   {
     title: cardTitles[0],
@@ -50,12 +50,12 @@ const Home = () => {
           return (
             // Will display as many cards as are in the CardTitlesPro array
             <Cards
-              key={i}
-              title={cards.title}
-              description={cards.description}
-              img={cards.img}
-              buttonText={cards.buttonText}
-              buttonAddress={cards.buttonAddress}
+              key={i} // the number of the card
+              title={cards.title} // Should take title from cardTitles.
+              description={cards.description} // Should take description from cardTitles.
+              img={cards.img} // Should take img from cardTitles.
+              buttonText={cards.buttonText} // Should take buttonTest from cardTitles.
+              buttonAddress={cards.buttonAddress} // Should take buttonAddress from cardTitles.
             />
           );
         })}
